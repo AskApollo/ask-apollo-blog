@@ -25,14 +25,14 @@ module.exports = {
         sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
       },
       colors: {
-        primary: colors.cyan,
-        gray: colors.gray,
+        primary: colors.sky,
+        gray: colors.zinc,
       },
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
             a: {
-              color: theme('colors.primary.700'),
+              color: theme('colors.primary.500'),
               '&:hover': {
                 color: `${theme('colors.primary.600')}`,
               },
