@@ -37,7 +37,10 @@ const Header = () => {
               key={link.title}
               href={link.href}
               className={`hidden font-medium text-gray-900 dark:text-gray-100 sm:block ${
-                pathname == link.href ? ' underline ' : ''
+                (pathname.startsWith(link.href) && link.href != '/') ||
+                (pathname == '/' && link.href == '/')
+                  ? ' underline decoration-primary-500 underline-offset-4 '
+                  : ''
               }`}
             >
               {link.title}

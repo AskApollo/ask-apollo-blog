@@ -13,10 +13,10 @@ const siteMetadata = {
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'support@cyanarrow.com',
   github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  twitter: 'https://twitter.com/AnshCooll',
+  facebook: 'https://www.facebook.com/profile.php?id=61550730298450',
+  youtube: 'https://www.youtube.com/channel/UCoQO54hog9-emacvABlEP3g',
+  linkedin: 'https://www.linkedin.com/company/swift-assist-ai',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
