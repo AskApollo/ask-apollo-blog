@@ -31,7 +31,7 @@ interface LayoutProps {
 
 export default function PostLayout({ content, authorDetails, next, prev, children }: LayoutProps) {
   const { filePath, path, slug, date, title, tags, summary } = content
-  const basePath = path.split('/')[0]
+  const basePath = 'posts' //path.split('/')[0]
 
   return (
     <SectionContainer>
@@ -131,7 +131,9 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                           Previous Article
                         </h2>
                         <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
-                          <Link href={`/${prev.path}`}>{prev.title}</Link>
+                          <Link href={`/${prev.path.replace('blog/', 'posts/')}`}>
+                            {prev.title}
+                          </Link>
                         </div>
                       </div>
                     )}
@@ -141,7 +143,9 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                           Next Article
                         </h2>
                         <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
-                          <Link href={`/${next.path}`}>{next.title}</Link>
+                          <Link href={`/${next.path.replace('blog/', 'posts/')}`}>
+                            {next.title}
+                          </Link>
                         </div>
                       </div>
                     )}
@@ -154,7 +158,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                   className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                   aria-label="Back to the blog"
                 >
-                  &larr; Back to the blog
+                  &larr; Back to the posts
                 </Link>
               </div>
             </footer>
