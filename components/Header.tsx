@@ -8,6 +8,9 @@ import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import SearchButton from './SearchButton'
 import { usePathname } from 'next/navigation'
+import { Anek_Latin } from 'next/font/google'
+
+const anek = Anek_Latin({ subsets: ['latin'] })
 
 const Header = () => {
   const pathname = usePathname()
@@ -15,28 +18,26 @@ const Header = () => {
     <header className="flex items-center justify-between py-10">
       <div>
         <Link href="https://www.cyanarrow.com" aria-label={siteMetadata.headerTitle}>
-          <div className="flex items-center justify-between">
-            <div className="mr-3 rounded bg-black bg-opacity-50 p-0.5 dark:bg-white dark:bg-opacity-20">
+          <div className="flex items-center">
+            <div className="mr-2 rounded  dark:bg-opacity-20">
               <Logo />
             </div>
-            {typeof siteMetadata.headerTitle === 'string' ? (
-              <div className="hidden h-6 text-2xl font-semibold sm:block">
-                {siteMetadata.headerTitle}
-              </div>
-            ) : (
-              siteMetadata.headerTitle
-            )}
+            <span
+              className={`${anek.className} whitespace-nowrap bg-gradient-to-r from-[#1F7FF0] via-[#00ffff] to-[#1F7FF0] bg-clip-text text-2xl font-bold text-transparent xl:text-3xl`}
+            >
+              CYAN<span className="font-normal ">ARROW</span>
+            </span>
           </div>
         </Link>
       </div>
-      <div className="flex items-center space-x-4 leading-5 sm:space-x-6">
+      <div className="flex items-center space-x-4 leading-5 lg:space-x-6">
         {headerNavLinks
           // .filter((link) => link.href !== '/')
           .map((link) => (
             <Link
               key={link.title}
               href={link.href}
-              className={`hidden font-medium text-gray-900 dark:text-gray-100 sm:block ${
+              className={`hidden whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100 sm:block lg:text-base ${
                 (pathname.startsWith(link.href) && link.href != '/') ||
                 (pathname == '/' && link.href == '/')
                   ? ' underline decoration-primary-500 underline-offset-4 '
