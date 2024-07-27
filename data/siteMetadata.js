@@ -1,17 +1,17 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Cyan Arrow Blog',
+  title: 'AskApollo Blog',
   author: 'Anshul Kumar',
-  headerTitle: 'Cyan Arrow Blog',
-  description: 'Blog to help businesses using Cyan Arrow platform',
+  headerTitle: 'AskApollo Blog',
+  description: 'Blog to help businesses using AskApollo platform',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://blog.cyanarrow.com',
+  siteUrl: 'https://blog.askapollohq.com',
   // siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
   mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'support@cyanarrow.com',
+  email: 'info@askapollohq.com',
   github: 'https://github.com',
   twitter: 'https://twitter.com/AnshCooll',
   facebook: 'https://www.facebook.com/profile.php?id=61550730298450',

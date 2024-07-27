@@ -4,7 +4,7 @@ const headerNavLinks = [
   { href: '/tags', title: 'Tags' },
   // { href: '/projects', title: 'Projects' },
   { href: '/about', title: 'Bio' },
-  { href: 'https://app.cyanarrow.com', title: 'Sign In' },
+  { href: 'https://app.askapollohq.com', title: 'Sign In' },
 ]
 
 export default headerNavLinks

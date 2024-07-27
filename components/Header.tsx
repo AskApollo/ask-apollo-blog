@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between py-10">
       <div>
-        <Link href="https://www.cyanarrow.com" aria-label={siteMetadata.headerTitle}>
+        <Link href="https://www.askapollohq.com" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center">
             <div className="mr-2 rounded  dark:bg-opacity-20">
               <Logo />
@@ -25,7 +25,7 @@ const Header = () => {
             <span
               className={`${anek.className} whitespace-nowrap bg-gradient-to-r from-[#1F7FF0] via-[#00ffff] to-[#1F7FF0] bg-clip-text text-2xl font-bold text-transparent xl:text-3xl`}
             >
-              CYAN<span className="font-normal ">ARROW</span>
+              ASK<span className="font-normal ">APOLLO</span>
             </span>
           </div>
         </Link>
